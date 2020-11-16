@@ -11,7 +11,7 @@
     <packaging>pom</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>es6-promise-parent</artifactId>
-    <version>4.2.8-SNAPSHOT</version>
+    <version>4.2.8</version>
     <name>ES6-Promises Parent</name>
     <description>WebJar for ES6-Promises Parent</description>
     <url>http://webjars.org</url>
@@ -44,7 +44,7 @@
         <url>http://github.com/webjars/es6-promise</url>
         <connection>scm:git:https://github.com/webjars/es6-promise.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/es6-promise.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>es6-promise-parent-4.2.8</tag>
     </scm>
 
     <modules>
@@ -87,7 +87,7 @@
                         <configuration>
                             <target>
                                 <echo message="unzip archive" />
-                                <gunzip src="${project.build.directory}/es6-promise.tar.gz"/>
+                                <gunzip src="${project.build.directory}/es6-promise.tar.gz" />
                                 <untar src="${project.build.directory}/es6-promise.tar" dest="${project.build.directory}" />
                             </target>
                         </configuration>
